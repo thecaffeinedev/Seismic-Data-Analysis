@@ -68,7 +68,16 @@ different times, from the same mine. This is based on the data set description a
 Learning repository, and the fact that you can’t take multiple simultaneous readings from the same
 instrument.
 
+#### Multi-collinearity
+We used the following chart to assess the correlation of variables with each other. The most highly
+correlated variables are energy and maxenergy. It is also interesting that the gpuls:genergy and
+gdpuls:gdenergy are somewhat correlated, but we would expect that an increase in the count of pulses
+per shift would raise the calculated energy per shift. We would also expect the change in variance in the
+number of pulses per shift (gdpuls) to correlate somewhat with the variance in the energy measured
+(gdenergy). For this model, we decided to leave all the main effects variables intact and address any
+multicollinearity issues after glmnet’s automatic feature selection, if necessary (spoiler: it wasn’t).
 
+![multicollinearity ](https://github.com/TheCaffeineDev/Seismic-Data-Analysis/blob/master/img/CORplot.png) 
 
 #### Reference
 
