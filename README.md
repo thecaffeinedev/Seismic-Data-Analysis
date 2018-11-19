@@ -39,3 +39,31 @@ ground. A class = 1 variable result signifies that a hazardous bump did, indeed,
 following shift to the measured data. 
 
 ![Description ](https://github.com/TheCaffeineDev/Seismic-Data-Analysis/blob/master/img/att.JPG) 
+
+### Main Effects
+
+The main effects for this study are considered to be the all numeric variables, plus
+ghazard, seismoacoustic and shift. This stands to reason, since numerical energy readings and
+shift activity type all seem like they would impact the number of hazardous seismic events in
+the next shift. The nbumps class of variables are left out for more advanced models, since the
+resonance and frequency ranges could have a multitude of confounding variables that we,
+without significant mining expertise, would miss. To test that nbumps isn’t necessarily the
+largest effect, we looked at a side-by-side histogram of nbump records for each of the two
+output classes:
+
+![Bumps ](https://github.com/TheCaffeineDev/Seismic-Data-Analysis/blob/master/img/bumps.JPG) 
+
+The pattern of frequency distributions appears to be consistent, regardless of class. Therefore, we will
+not be making ‘nbumps’ one of our main effects variables.
+
+### Logistic Regression Assumptions
+
+#### Output Variable
+Logistic regression requires a categorical output variable. In this case, our output variable (class) is a
+binary categorical variable.
+
+#### Independence of Observations
+We are making the assumption that each measurement is an independent measurement, taken at
+different times, from the same mine. This is based on the data set description at the UCI Machine
+Learning repository, and the fact that you can’t take multiple simultaneous readings from the same
+instrument.
