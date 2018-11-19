@@ -67,3 +67,9 @@ We are making the assumption that each measurement is an independent measurement
 different times, from the same mine. This is based on the data set description at the UCI Machine
 Learning repository, and the fact that you can’t take multiple simultaneous readings from the same
 instrument.
+
+
+
+#### Reference
+
+https://www.hindawi.com/journals/sv/2016/8740868/#B13
