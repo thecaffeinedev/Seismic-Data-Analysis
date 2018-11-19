@@ -38,4 +38,4 @@ Joules, and a 'shift' is a period of 8 hours. For the sake of reference, a pract
 ground. A class = 1 variable result signifies that a hazardous bump did, indeed, occur in the
 following shift to the measured data. 
 
-![Description ]("img/att.jpg")
+![Description ](https://github.com/TheCaffeineDev/Seismic-Data-Analysis/blob/master/img/att.JPG) 
