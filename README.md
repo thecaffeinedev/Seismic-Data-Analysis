@@ -97,7 +97,7 @@ accuracy is then calculated by comparing with the actual class variable.
 Our calculation show that the logistic regression model with all the observations and variables
 made a correct prediction 59% of the time.
 
-#### Testing the accuracy using other ML Algorithms
+#### Accuracy using other ML Algorithms
 
 * Decision Tree : 0.8897485493230 
 * KNN: 0.9323017408123792,
@@ -107,7 +107,41 @@ made a correct prediction 59% of the time.
 * Random Forest': 0.9226305609284333
 * ANN : 0.9129593810444874
 
+#### Conclusion
+
+This data set has been used in many, many papers and theories. This seismic bump problem is an
+interesting problem, an important problem, and has a fascinating data set. However, it is challenging
+due in no small part to the unbalanced data. Like the infamous Challenger O-Ring data set, the lack of a
+hazardous result is not a ‘null’ case but instead informs the model about situations where nothing bad
+happens… a class = 0 event. Unlike the Challenger data set, we have many more parameters to choose
+from, and myriad ways of dealing with the imbalanced data. We chose to Randomly Under-Sample, but
+we could also do Synthetic Minority Over-Sampling, Cluster-Based Over-Sampling, Random
+Over-Sampling, Algorithmic Ensemble Sampling, Bagging, Boosting, and probably many other techniques
+which aren’t covered in a graduate level statistics course. We chose a pretty straightforward solution,
+which definitely impacts the performance of our model.
+
+Our logistic regression model predicts the test set with around 60 to 70% accuracy, after
+random under-sampling.
+
+While the methods for calculating the results of these various methods aren’t clearly documented in the
+data set, we can assume that we understand a few of them through inference. Accuracy (Acc.) is the
+percentage of times our model correctly predicted the class in the test set.
+
+#### Some different ideas on this dataset:
+
+* Where are the geophones located? Is it possible to do TRM (time reverse modeling) of stress wave propagation? With this dataset we simply know that if a rock burst occurs in a longwall but not where.
+
+* What to do with the results? We may end up knowing if a rock burst is likely to occur or not. Can we use the recorded data to estimate locations and therefore controll stress release before the burst?
+
+* Can we extract another set of useful information from the raw data from the geophones (what we got here is heavily processed)?
+
+
 
 #### Reference
 
-https://www.hindawi.com/journals/sv/2016/8740868/#B13
+1. https://www.hindawi.com/journals/sv/2016/8740868/#B13
+2. Learning from Imbalanced Classes (https://svds.com/learning-imbalanced-classes/)↩
+3. Alpaydin, Ethem (2014). Introduction to Machine Learning, Third Edition. MIT Press. ISBN 978-0-262-02818-9.↩
+4. L. Breiman, J.H. Friedman, R.A. Olshen, , and C.J Stone. Classification and Regression Tree. Wadsworth, Belmont, Ca, 1983.↩
+5. T.M Therneau and E.J Atkinson. An Introduction to Recursive Partitioning Using the RPART Routines, Mayo Clinic, 2016.(https://cran.r-project.org/web/packages/rpart/vignettes/longintro.pdf)↩
+6. UCI Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/seismic-bumps)↩
