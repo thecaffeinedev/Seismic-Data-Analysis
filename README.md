@@ -79,6 +79,35 @@ multicollinearity issues after glmnet’s automatic feature selection, if necess
 
 ![multicollinearity ](https://github.com/TheCaffeineDev/Seismic-Data-Analysis/blob/master/img/CORplot.png) 
 
+#### Problem with unbalanced class variable
+
+The dependent variable in our model is quite unevenly balanced with a 14:1 ratio for
+non-hazardous to hazardous. To illustrate the problem with having an unbalanced class
+variable we compare accuracy of the logistic regression full model with the null model.
+
+#### Full Model
+
+We first built a logistic regression model taking all the observations and variables into account.
+glm(class ~ . , data = sb, family = "binomial"). Next we predict using this full model and calculate
+the probability of getting a hazardous bump. To convert these probabilities to classes, we
+defined a threshold. A good value for threshold is the mean of the original response variable.
+Probabilities greater than this threshold are categorized into hazardous bump class and
+probabilities lesser than the threshold are categorized into non-hazardous bump class. Model
+accuracy is then calculated by comparing with the actual class variable.
+Our calculation show that the logistic regression model with all the observations and variables
+made a correct prediction 59% of the time.
+
+#### Testing the accuracy using other ML Algorithms
+
+* Decision Tree : 0.8897485493230 
+* KNN: 0.9323017408123792,
+* KernelSVC': 0.9264990328820116,
+* LinearSVC': 0.9264990328820116,
+* Naive Bayes: 0.11798839458413926,
+* Random Forest': 0.9226305609284333
+* ANN : 0.9129593810444874
+
+
 #### Reference
 
 https://www.hindawi.com/journals/sv/2016/8740868/#B13
