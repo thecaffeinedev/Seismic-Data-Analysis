@@ -142,11 +142,9 @@ percentage of times our model correctly predicted the class in the test set.
 
 
 
-#### Reference
 
-1. https://www.hindawi.com/journals/sv/2016/8740868/#B13
-2. Learning from Imbalanced Classes (https://svds.com/learning-imbalanced-classes/)↩
-3. Alpaydin, Ethem (2014). Introduction to Machine Learning, Third Edition. MIT Press. ISBN 978-0-262-02818-9.↩
-4. L. Breiman, J.H. Friedman, R.A. Olshen, , and C.J Stone. Classification and Regression Tree. Wadsworth, Belmont, Ca, 1983.↩
-5. T.M Therneau and E.J Atkinson. An Introduction to Recursive Partitioning Using the RPART Routines, Mayo Clinic, 2016.(https://cran.r-project.org/web/packages/rpart/vignettes/longintro.pdf)↩
-6. UCI Machine Learning Repository (https://archive.ics.uci.edu/ml/datasets/seismic-bumps)↩
+#### References
+
+* https://www.hindawi.com/journals/sv/2016/8740868/#B13
+
+
