@@ -19,6 +19,11 @@ combined categorical and numeric variables that could be used to predict seismic
 'seismic bumps' data set can be found at
 https://archive.ics.uci.edu/ml/datasets/seismic-bumps .
 
+### Agenda
+
+Task of hazards prediction bases on the relationship between the energy of recorded tremors and seismoacoustic activity with the possibility of rockburst occurrence.  With the information about the possibility of hazardous situation occurrence, an appropriate supervision service can reduce a risk of rockburst .
+
+
 ### Problem Statement
 
 Our analysis attempts to use logistic regression techniques to predict whether a seismic
