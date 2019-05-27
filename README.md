@@ -10,7 +10,7 @@ Problem Statement - Data Analysis and Development of Environmental Information S
 
 The dangers associated with coal mining are myriad; black lung, flammable gas pockets,
 rock-bursts, and tunnel collapses are all very real dangers that mining companies must consider
-when attempting to provide safe working conditions for miners. One class of mining hazard,
+while attempting to provide safe working conditions for miners. One class of mining hazard,
 commonly called 'seismic hazards', are notoriously difficult to protect against and even more
 difficult to predict with certainty. Therefore, predicting these hazards has become a well-known
 problem for machine learning and predictive analytics. The UCI Machine Learning Repository
